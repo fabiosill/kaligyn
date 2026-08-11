@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ============================================= -->
+  <!-- CONFIGURAÇÃO BÁSICA / SEO / META TAGS          -->
+  <!-- ============================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KALIGYM Fitness Center | Academia em Santo André - SP</title>
+  <meta name="description" content="Há 9 anos transformando vidas em Santo André - SP. Musculação completa, aulas de Zumba inclusas e profissionais qualificados. Conheça a KALIGYM.">
+  <meta name="keywords" content="academia Santo André, academia SP, musculação, aula de zumba, personal trainer, KALIGYM">
+  <meta name="author" content="KALIGYM Fitness Center">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#323568">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KALIGYM Fitness Center">
+  <meta property="og:title" content="KALIGYM Fitness Center | Academia em Santo André - SP">
+  <meta property="og:description" content="Há 9 anos transformando vidas através da atividade física. Estrutura completa, aulas de Zumba inclusas e acompanhamento profissional.">
+  <meta property="og:image" content="images/professor.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KALIGYM Fitness Center | Academia em Santo André - SP">
+  <meta name="twitter:description" content="Há 9 anos transformando vidas através da atividade física. Matricule-se e conquiste seus objetivos.">
+  <meta name="twitter:image" content="images/professor.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- Preconnect + Fontes (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload da imagem principal (LCP) -->
+  <link rel="preload" as="image" href="images/professor.png" fetchpriority="high">
+
+  <!-- Folha de estilos -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Caso o JavaScript não carregue, garante que o conteúdo continue visível -->
+  <noscript>
+    <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+  </noscript>
+
+  <!-- Dados estruturados (SEO local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "KALIGYM Fitness Center",
+    "image": "images/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Evangelista de Souza, 1795",
+      "addressLocality": "Santo André",
+      "addressRegion": "SP",
+      "postalCode": "09260-411",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "06:00",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "08:00",
+        "closes": "14:00"
+      }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Link de acessibilidade: pular para o conteúdo -->
+  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ============================================= -->
+  <!-- HEADER FIXO                                    -->
+  <!-- ============================================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <a href="#inicio" class="header__logo" aria-label="KALIGYM Fitness Center - página inicial">
+        <img src="images/logo.png" alt="KALIGYM Fitness Center" width="147" height="111">
+      </a>
+
+      <!-- Navegação principal -->
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Início</a></li>
+          <li><a href="#planos" class="nav__link">Planos</a></li>
+          <li><a href="#estrutura" class="nav__link">Estrutura</a></li>
+          <li><a href="#equipe" class="nav__link">Equipe</a></li>
+          <li><a href="#localizacao" class="nav__link">Localização</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <!-- PLACEHOLDER: trocar o número pelo WhatsApp real da academia -->
+        <a href="https://wa.me/5511900000000?text=Ol%C3%A1!%20Quero%20me%20matricular%20na%20KALIGYM."
+           class="btn btn--primary btn--sm header__cta" target="_blank" rel="noopener">
+          Matricule-se
+        </a>
+
+        <!-- Botão hambúrguer (mobile) -->
+        <button class="hamburger" id="hamburger" type="button"
+                aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Fundo do menu mobile -->
+    <div class="nav-backdrop" id="navBackdrop"></div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================= -->
+    <!-- HERO                                           -->
+    <!-- ============================================= -->
+    <section class="hero" id="inicio">
+      <div class="hero__decor" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow eyebrow--light">Academia KALIGYM · Santo André - SP</p>
+          <h1 class="hero__title">Há 9 anos transformando vidas através da atividade física.</h1>
+          <p class="hero__subtitle">Treine com acompanhamento, estrutura completa e profissionais preparados para ajudar você a conquistar seus objetivos.</p>
+
+          <div class="hero__buttons">
+            <a href="https://wa.me/5511900000000?text=Ol%C3%A1!%20Quero%20conhecer%20a%20KALIGYM."
+               class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+              Quero conhecer
+            </a>
+            <a href="#planos" class="btn btn--outline btn--lg">Ver planos</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__image-frame">
+            <img src="images/professor.png  " alt="Professor da KALIGYM pronto para o treino"
+                 width="900" height="1125" fetchpriority="high">
+          </div>
+          <div class="hero__badge">
+            <span class="hero__badge-number">9</span>
+            <span class="hero__badge-text">anos de<br>tradição</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- DIFERENCIAIS                                   -->
+    <!-- ============================================= -->
+    <section class="diferenciais" id="diferenciais">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Por que treinar aqui</p>
+          <h2>Tudo o que você precisa em um só lugar</h2>
+        </div>
+
+        <ul class="diferenciais__grid">
+          <li class="diferencial-card reveal">
+            <span class="diferencial-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="1.5" y="9" width="3" height="6" rx="1"></rect>
+                <rect x="19.5" y="9" width="3" height="6" rx="1"></rect>
+                <line x1="4.5" y1="12" x2="19.5" y2="12"></line>
+                <rect x="6.5" y="7" width="2.5" height="10" rx="1"></rect>
+                <rect x="15" y="7" width="2.5" height="10" rx="1"></rect>
+              </svg>
+            </span>
+            <span class="diferencial-card__title">Academia completa</span>
+          </li>
+
+          <li class="diferencial-card reveal">
+            <span class="diferencial-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" y1="6" x2="20" y2="6"></line>
+                <circle cx="14" cy="6" r="2"></circle>
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <circle cx="8" cy="12" r="2"></circle>
+                <line x1="4" y1="18" x2="20" y2="18"></line>
+                <circle cx="16" cy="18" r="2"></circle>
+              </svg>
+            </span>
+            <span class="diferencial-card__title">Equipamentos modernos</span>
+          </li>
+
+          <li class="diferencial-card reveal">
+            <span class="diferencial-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="8" r="5.5"></circle>
+                <path d="M8.5 12.8 7 21l5-2.5 5 2.5-1.5-8.2"></path>
+              </svg>
+            </span>
+            <span class="diferencial-card__title">Professores qualificados</span>
+          </li>
+
+          <li class="diferencial-card reveal">
+            <span class="diferencial-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="2" x2="12" y2="22"></line>
+                <line x1="4.5" y1="6" x2="19.5" y2="18"></line>
+                <line x1="4.5" y1="18" x2="19.5" y2="6"></line>
+                <path d="M9.5 4.5 12 2l2.5 2.5M9.5 19.5 12 22l2.5-2.5"></path>
+                <path d="M4.7 9 4.5 6l3-.7M19.3 9l.2-3-3-.7"></path>
+                <path d="M19.3 15l.2 3-3 .7M4.7 15l-.2 3 3 .7"></path>
+              </svg>
+            </span>
+            <span class="diferencial-card__title">Ambiente climatizado</span>
+          </li>
+
+          <li class="diferencial-card reveal">
+            <span class="diferencial-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="8.5" cy="8" r="3"></circle>
+                <path d="M2.5 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path>
+                <circle cx="17" cy="8.5" r="2.5"></circle>
+                <path d="M15 14.3c2.9.4 5 2.7 5 5.7"></path>
+              </svg>
+            </span>
+            <span class="diferencial-card__title">Aulas inclusas</span>
+          </li>
+
+          <li class="diferencial-card reveal">
+            <span class="diferencial-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="10" cy="8" r="3.8"></circle>
+                <path d="M3.5 20.5c0-3.9 2.9-7 6.5-7s6.5 3.1 6.5 7"></path>
+                <path d="M16.5 12.5l1.8 1.8 3.2-3.6"></path>
+              </svg>
+            </span>
+            <span class="diferencial-card__title">Atendimento personalizado</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- PLANOS                                         -->
+    <!-- ============================================= -->
+    <section class="planos" id="planos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Nossos planos</p>
+          <h2>Escolha o plano ideal para você</h2>
+        </div>
+
+        <div class="planos__grid">
+
+          <!-- Plano Mensal -->
+          <article class="plano-card reveal">
+            <div class="plano-card__header">
+              <h3>Mensal</h3>
+              <p class="plano-card__tagline">Ideal para quem deseja flexibilidade.</p>
+            </div>
+            <ul class="plano-card__list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.3l2.6 2.6 5.4-5.8"></path></svg>Academia completa</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.3l2.6 2.6 5.4-5.8"></path></svg>Todas as máquinas</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.3l2.6 2.6 5.4-5.8"></path></svg>Musculação</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.3l2.6 2.6 5.4-5.8"></path></svg>Aula de Zumba inclusa</li>
+            </ul>
+            <a href="https://wa.me/5511900000000?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20Mensal%20da%20KALIGYM."
+               class="btn btn--outline-navy btn--block" target="_blank" rel="noopener">Quero este plano</a>
+          </article>
+
+          <!-- Plano Semestral -->
+          <article class="plano-card reveal">
+            <div class="plano-card__header">
+              <h3>Semestral</h3>
+              <p class="plano-card__tagline">Economize treinando por mais tempo.</p>
+            </div>
+            <ul class="plano-card__list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.3l2.6 2.6 5.4-5.8"></path></svg>Academia completa</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.3l2.6 2.6 5.4-5.8"></path></svg>Aula de Zumba inclusa</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.3l2.6 2.6 5.4-5.8"></path></svg>Todos os equipamentos</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.3l2.6 2.6 5.4-5.8"></path></svg>Melhor custo-benefício</li>
+            </ul>
+            <a href="https://wa.me/5511900000000?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20Semestral%20da%20KALIGYM."
+               class="btn btn--outline-navy btn--block" target="_blank" rel="noopener">Quero este plano</a>
+          </article>
+
+          <!-- Plano Anual - DESTAQUE -->
+          <article class="plano-card plano-card--destaque reveal">
+            <span class="plano-card__selo">Mais escolhido</span>
+            <div class="plano-card__header">
+              <h3>Anual</h3>
+              <p class="plano-card__tagline">O melhor caminho para resultados duradouros.</p>
+            </div>
+            <ul class="plano-card__list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.3l2.6 2.6 5.4-5.8"></path></svg>Academia completa</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.3l2.6 2.6 5.4-5.8"></path></svg>Aula de Zumba inclusa</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.3l2.6 2.6 5.4-5.8"></path></svg>Melhor economia</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M8 12.3l2.6 2.6 5.4-5.8"></path></svg>Melhor custo-benefício</li>
+            </ul>
+            <a href="https://wa.me/5511900000000?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20Anual%20da%20KALIGYM."
+               class="btn btn--primary btn--block" target="_blank" rel="noopener">Quero este plano</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- AULAS DE ZUMBA                                 -->
+    <!-- ============================================= -->
+    <section class="aulas">
+      <div class="aulas__decor" aria-hidden="true">
+        <svg viewBox="0 0 800 400" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M-50 320 Q 200 220 400 300 T 850 260" stroke="rgba(255,255,255,0.18)" stroke-width="3" fill="none"></path>
+          <path d="M-50 120 Q 220 60 420 140 T 850 90" stroke="rgba(255,255,255,0.12)" stroke-width="3" fill="none"></path>
+          <path d="M-50 380 Q 250 340 450 390 T 850 350" stroke="rgba(50,53,104,0.25)" stroke-width="3" fill="none"></path>
+        </svg>
+      </div>
+      <div class="container aulas__inner reveal">
+        <p class="eyebrow eyebrow--light">Inclusas em todos os planos</p>
+        <h2 class="aulas__title">Aulas de Zumba para todos os alunos</h2>
+        <p class="aulas__text">Além da musculação completa, todos os alunos podem participar gratuitamente das aulas de Zumba, proporcionando mais diversão, condicionamento físico e qualidade de vida.</p>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- ESTRUTURA (blocos alternados)                  -->
+    <!-- ============================================= -->
+    <section class="estrutura" id="estrutura">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Nossa estrutura</p>
+          <h2>Espaço pensado para o seu treino</h2>
+        </div>
+
+        <!-- Bloco 1: imagem à esquerda / texto à direita -->
+        <div class="estrutura__row reveal">
+          <div class="estrutura__media">
+            <div class="estrutura__frame">
+              <img src="images/academia1.jpeg" alt="Ambiente amplo da academia KALIGYM" width="1200" height="900" loading="lazy">
+            </div>
+          </div>
+          <div class="estrutura__text">
+            <h3>Amplitude para treinar do seu jeito</h3>
+            <p>Nossos espaços foram planejados para oferecer conforto em cada série. São áreas amplas, bem distribuídas e equipadas com máquinas modernas, para que alunos de todos os níveis treinem com liberdade de movimento e sem filas de espera.</p>
+          </div>
+        </div>
+
+        <!-- Bloco 2: imagem à direita / texto à esquerda -->
+        <div class="estrutura__row estrutura__row--reverse reveal">
+          <div class="estrutura__media">
+            <div class="estrutura__frame">
+              <img src="images/academia1.jpeg" alt="Organização e limpeza do ambiente da academia KALIGYM" width="1200" height="900" loading="lazy">
+            </div>
+          </div>
+          <div class="estrutura__text">
+            <h3>Organização e limpeza em cada detalhe</h3>
+            <p>Cuidamos de cada detalhe para garantir a sua experiência: ambiente sempre limpo, equipamentos organizados e uma estrutura confortável que transmite a seriedade de uma academia consolidada há 9 anos em Santo André.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- EQUIPE                                         -->
+    <!-- ============================================= -->
+    <section class="equipe" id="equipe">
+      <div class="container equipe__inner">
+        <div class="equipe__media reveal">
+          <div class="equipe__frame">
+            <img src="images/equipe.jpg" alt="Equipe de profissionais da KALIGYM" width="1200" height="900" loading="lazy">
+          </div>
+        </div>
+        <div class="equipe__text reveal">
+          <p class="eyebrow">Quem cuida de você</p>
+          <h2>Nossa equipe faz a diferença.</h2>
+          <p>Na KALIGYM você encontra profissionais atenciosos, preparados e sempre dispostos a orientar cada aluno durante os treinos.</p>
+          <p>Nosso compromisso é oferecer um atendimento próximo, acolhedor e de qualidade para que você evolua com segurança e confiança.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- HORÁRIOS DE FUNCIONAMENTO                      -->
+    <!-- ============================================= -->
+    <section class="horarios">
+      <div class="container">
+        <div class="horarios__box reveal">
+          <div class="horarios__heading">
+            <span class="horarios__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9.5"></circle>
+                <path d="M12 6.5v6l4 2.2"></path>
+              </svg>
+            </span>
+            <h2>Horário de funcionamento</h2>
+          </div>
+
+          <dl class="horarios__list">
+            <div class="horarios__item">
+              <dt>Segunda a Sexta</dt>
+              <dd>06:00 às 22:00</dd>
+            </div>
+            <div class="horarios__item">
+              <dt>Sábado</dt>
+              <dd>08:00 às 14:00</dd>
+            </div>
+            <div class="horarios__item">
+              <dt>Domingo</dt>
+              <dd>Fechado</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- LOCALIZAÇÃO                                    -->
+    <!-- ============================================= -->
+    <section class="localizacao" id="localizacao">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Onde estamos</p>
+          <h2>Venha nos conhecer</h2>
+        </div>
+
+        <div class="localizacao__grid">
+          <div class="localizacao__media reveal">
+            <div class="localizacao__frame">
+              <img src="images/fachada.jpg" alt="Fachada da academia KALIGYM em Santo André" width="900" height="1125" loading="lazy">
+            </div>
+          </div>
+
+          <div class="localizacao__info reveal">
+            <div class="localizacao__map-wrapper">
+              <iframe
+                src="https://www.google.com/maps?q=Rua+Evangelista+de+Souza%2C+1795%2C+Santo+Andr%C3%A9+-+SP%2C+09260-411&output=embed"
+                title="Localização da academia KALIGYM no mapa"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <address class="localizacao__address">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 21.5S4.5 14.8 4.5 9.7a7.5 7.5 0 0 1 15 0c0 5.1-7.5 11.8-7.5 11.8z"></path>
+                <circle cx="12" cy="9.5" r="2.6"></circle>
+              </svg>
+              <span>Rua Evangelista de Souza, 1795 — Santo André - SP<br>CEP 09260-411</span>
+            </address>
+
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua+Evangelista+de+Souza%2C+1795%2C+Santo+Andr%C3%A9+-+SP%2C+09260-411"
+               class="btn btn--primary" target="_blank" rel="noopener">
+              Como chegar
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- CTA FINAL                                      -->
+    <!-- ============================================= -->
+    <section class="cta-final">
+      <div class="container cta-final__inner reveal">
+        <h2>Comece hoje mesmo.</h2>
+        <p>Seu próximo resultado começa com a decisão de dar o primeiro passo.</p>
+        <a href="https://wa.me/5511900000000?text=Ol%C3%A1!%20Quero%20me%20matricular%20agora%20na%20KALIGYM."
+           class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+          Matricule-se agora
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================= -->
+  <!-- RODAPÉ                                         -->
+  <!-- ============================================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <img src="images/logo.png" alt="KALIGYM Fitness Center" width="147" height="111" loading="lazy">
+        <p>Academia completa em Santo André - SP. Musculação, Zumba e acompanhamento profissional há 9 anos.</p>
+
+        <div class="footer__social">
+          <a href="#" aria-label="KALIGYM no Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4.2"></circle>
+              <circle cx="17.2" cy="6.8" r="1"></circle>
+            </svg>
+          </a>
+          <a href="#" aria-label="KALIGYM no Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14 21v-8h2.7l.4-3.3H14V7.6c0-.96.27-1.6 1.7-1.6H17V3.14C16.72 3.1 15.76 3 14.64 3 12.3 3 10.7 4.4 10.7 7.3v2.4H8v3.3h2.7V21z"></path>
+            </svg>
+          </a>
+          <a href="https://wa.me/5511900000000" aria-label="KALIGYM no WhatsApp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17 14.3c-.3-.15-1.7-.85-2-.95-.27-.1-.46-.15-.66.15-.2.3-.75.95-.92 1.14-.17.2-.34.22-.63.08-.3-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.03-.17-.3-.02-.46.13-.6.13-.14.3-.34.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.9-2.18-.24-.58-.48-.5-.66-.5h-.56c-.2 0-.5.07-.77.37-.26.3-1 1-1 2.4 0 1.4 1.03 2.78 1.17 2.98.15.2 2.03 3.1 4.9 4.34.7.3 1.24.48 1.66.62.7.22 1.33.19 1.84.11.56-.08 1.7-.7 1.95-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.2-.55-.34z"></path>
+              <path d="M12 2.5A9.5 9.5 0 0 0 4.1 17.6L2.5 21.5l4-1.5A9.5 9.5 0 1 0 12 2.5z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3>Endereço</h3>
+        <address>Rua Evangelista de Souza, 1795<br>Santo André - SP</address>
+      </div>
+
+      <div class="footer__col">
+        <h3>Horário</h3>
+        <p>Segunda a Sexta<br>06h às 22h</p>
+        <p>Sábado<br>08h às 14h</p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Contato</h3>
+        <!-- PLACEHOLDER: substituir pelos contatos reais -->
+        <p>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="16" height="16">
+            <path d="M5 4h3.3l1.3 4-2 1.5a12.3 12.3 0 0 0 6.9 6.9l1.5-2 4 1.3V19c0 1.1-.9 2-2 2C9.6 21 3 14.4 3 6c0-1.1.9-2 2-2z"></path>
+          </svg>
+          (11) 0000-0000
+        </p>
+        <p>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16">
+            <path d="M17 14.3c-.3-.15-1.7-.85-2-.95-.27-.1-.46-.15-.66.15-.2.3-.75.95-.92 1.14-.17.2-.34.22-.63.08-.3-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.03-.17-.3-.02-.46.13-.6.13-.14.3-.34.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.9-2.18-.24-.58-.48-.5-.66-.5h-.56c-.2 0-.5.07-.77.37-.26.3-1 1-1 2.4 0 1.4 1.03 2.78 1.17 2.98.15.2 2.03 3.1 4.9 4.34.7.3 1.24.48 1.66.62.7.22 1.33.19 1.84.11.56-.08 1.7-.7 1.95-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.2-.55-.34z"></path>
+            <path d="M12 2.5A9.5 9.5 0 0 0 4.1 17.6L2.5 21.5l4-1.5A9.5 9.5 0 1 0 12 2.5z"></path>
+          </svg>
+          (11) 90000-0000
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year">2026</span> KALIGYM Fitness Center. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
