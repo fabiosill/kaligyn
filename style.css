@@ -189,8 +189,12 @@ address { font-style: normal; }
 .eyebrow--light { color: var(--orange); }
 
 .section-heading {
-  max-width: 640px;
+  max-width: 1040px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-bottom: var(--space-6);
+
 }
 
 .section-heading h2 { margin: 0; }
@@ -1093,6 +1097,7 @@ address { font-style: normal; }
     padding: 0;
     border-bottom: none;
   }
+
   .nav__link:hover { color: var(--orange-dark); padding-left: 0; }
   .nav__link { position: relative; }
   .nav__link--active { color: var(--orange-dark); }
@@ -1155,6 +1160,7 @@ address { font-style: normal; }
   /* --- Localização --- */
   .localizacao__frame { aspect-ratio: 4 / 5; }
 }
+
 
 
 /* =====================================================================
